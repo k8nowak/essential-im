@@ -1,0 +1,114 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background: #d6fc6a;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2em;
+}
+
+header h1 {
+    font-size: 2em; /* Default size */
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em; /* Smaller size for smaller screens */
+    }
+}
+
+h2 {
+    color: #333;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* Link styles */
+a {
+    color: #ff9800; /* A modern blue color */
+    text-decoration: none; /* Removes the default underline */
+    font-weight: bold; /* Makes the links stand out */
+    border-bottom: 2px solid transparent; /* Adds a subtle underline effect */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition on hover */
+}
+
+a:hover {
+    color: #d6fc6a; /* Matches the header for consistency */
+    border-bottom: 2px solid #d6fc6a; /* Adds an underline on hover */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: square; /* Changes the bullet to a square */
+    padding-left: 20px; /* Adds some space between the bullets and the text */
+}
+
+main {
+    margin: 20px 0;
+}
+
+section {
+    background: #fff;
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adds vertical space between sections */
+}
+
+p {
+    line-height: 1.4; /* Increase the space between lines */
+    text-align: left; /* Align text to the left */
+    max-width: 700px; /* Limit how wide the text can go */
+    margin: 0; /* Center it within the section */
+    padding: 20px; /* Add more space around the text */
+}
+
+#about p {
+    text-align: left !important; /* Forces the left alignment */
+}
+
+.spacer {
+    display: block;
+    height: 10px; /* Adjust the space after each line break */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.8em; /* Adjust to make the text smaller */
+}
